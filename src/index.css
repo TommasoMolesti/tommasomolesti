@@ -3,13 +3,14 @@
 @media (max-width: 768px) {
   body{
     background-color: #f3f3f3;
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: Tahoma, sans-serif;
     margin-left: 5%;
     margin-right: 5%;
     text-align: justify;
     text-justify: inter-word;
   }
   .logo {
+    color:black;
     padding: 15px;
     font-size: 30px;
     margin-top:1.5%;
@@ -54,10 +55,6 @@
     font-weight: bold;
     margin-top: 50px;
   }
-  .subtitleHome{
-    font-size: 20px;
-    font-weight: bold;
-  }
   .bar{
     width: 100% !important;
     height: 0.5px;
@@ -79,6 +76,19 @@
     height: 40px;
     margin: 6%;
     vertical-align: middle;
+  }
+  .titleContatti{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 25px;
+  }
+  .testoContatti{
+    padding:5px 5px 15px 0;
+  }
+  .subTitleContatti{
+    font-weight: bold;
+    font-size: 20px;
+    padding:5px 5px 5px 0;
   }
 }
 @media(max-width: 1200px) {

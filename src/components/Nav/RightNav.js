@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ukFlag from '../ukFlag.png'
+import { Link } from 'react-router-dom';
 
 const Ul = styled.ul`
   list-style: none;
@@ -20,11 +21,12 @@ const Ul = styled.ul`
     width: 100%;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
-    li {
+    li,a {
       color: black;
       align-self: center;
       font-size:20px;
       margin-top:10px;
+      text-decoration:none;
     }
   }
 `;
@@ -32,10 +34,10 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li>Home</li>
-      <li>About</li>
-      <li>Contact</li>
-      <li><img src={ukFlag} height="20px" width="40px"/></li>
+      <li><Link to="/"><a>Home</a></Link></li>
+      <li><Link to="/about"><a>About</a></Link></li>
+      <li><Link to="/contact"><a>Contact</a></Link></li>
+      {/*<li><img src={ukFlag} height="20px" width="40px"/></li>*/}
     </Ul>
   )
 }

@@ -1,16 +1,25 @@
 import React from 'react';
-import Navbar from './components/Nav/Navbar';
-import Body from './components/Body'
-import Footer from './components/Footer'
+import Home from './components/Home'
+import About from './components/About';
+import Contact from './components/Contact';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 
 export default class App extends React.Component{
   render(){
     return(
-      <div className="App">
-        <Navbar />
-        <Body />
-        <Footer />
+      <div>
+        <BrowserRouter>
+          <div>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/about" element={<About/>} />
+            <Route path="/contact" element={<Contact/>} />
+          </Routes>
+          </div>
+        </BrowserRouter>
       </div>
+      
     )
   }
 }
