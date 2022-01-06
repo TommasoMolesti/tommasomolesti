@@ -6,10 +6,10 @@ import { send } from 'emailjs-com';
 import { useState } from 'react';
 
 
+
 function Contact(){
     const [toSend, setToSend] = useState({
         from_name: '',
-        to_name: '',
         message: '',
         reply_to: '',
       });
@@ -26,10 +26,12 @@ function Contact(){
           "user_xvca7As9yGUC6b2y4vJou"
         )
           .then((response) => {
-            console.log('SUCCESS!', response.status, response.text);
+            //console.log('SUCCESS!', response.status, response.text);
+            alert("Messaggio inviato correttamente")
           })
           .catch((err) => {
-            console.log('FAILED...', err);
+            //console.log('FAILED...', err);
+            alert("Errore nell'invio del messaggio")
           });
         }
     return(
@@ -41,7 +43,7 @@ function Contact(){
         <div className='testoContatti'>+39 366 4341755</div>
         <div className='subTitleContatti'>Email</div>
         <div className='testoContatti'>tommymolesti246@gmail.com</div>
-
+        <div className='subTitleContatti'>Contattami via email da qui</div>
         <form onSubmit={onSubmit}>
             <input
                 type='text'
@@ -49,20 +51,8 @@ function Contact(){
                 placeholder='Nome'
                 value={toSend.from_name}
                 onChange={handleChange}
-            />
-            <input
-                type='text'
-                name='to_name'
-                placeholder='to name'
-                value={toSend.to_name}
-                onChange={handleChange}
-            />
-            <input
-                type='text'
-                name='message'
-                placeholder='Messaggio'
-                value={toSend.message}
-                onChange={handleChange}
+                className='inputForm'
+                required
             />
             <input
                 type='text'
@@ -70,10 +60,22 @@ function Contact(){
                 placeholder='La tua email'
                 value={toSend.reply_to}
                 onChange={handleChange}
+                className='inputForm'
+                required
             />
-            <button type='submit'>Invia</button>
-            </form>
-
+            <input
+                type='text'
+                name='message'
+                placeholder='Messaggio'
+                value={toSend.message}
+                onChange={handleChange}
+                className='inputFormMessage'
+                required
+            />
+            <button className="buttonForm" type='submit'>Invia</button>
+          </form>
+          <div>
+    </div>
         <Footer />
       </div>
     )
