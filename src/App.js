@@ -1,7 +1,11 @@
 import React from 'react';
 import Home from './components/Home'
-import About from './components/About';
-import Contact from './components/Contact';
+import Interessi  from './components/Interessi';
+import Contatti from './components/Contatti';
+import Istruzione from './components/Istruzione';
+import EsperienzeLavorative from './components/EsperienzeLavorative';
+import ProgettiPersonali from './components/ProgettiPersonali';
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
@@ -13,8 +17,11 @@ export default class App extends React.Component{
           <div>
           <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="/about" element={<About/>} />
-            <Route path="/contact" element={<Contact/>} />
+            <Route path="/interessi" element={<Interessi />} />
+            <Route path="/contatti" element={<Contatti/>} />
+            <Route path="/istruzione" element={<Istruzione/>} />
+            <Route path="/esperienze-lavorative" element={<EsperienzeLavorative/>} />
+            <Route path="/progetti-personali" element={<ProgettiPersonali/>} />
           </Routes>
           </div>
         </BrowserRouter>

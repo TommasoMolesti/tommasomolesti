@@ -9,12 +9,12 @@ export default class Footer extends React.Component{
             <div className="footer">
                 <div className="bar"></div>
                 <div className="footerElement">
-                    <div className="footerTitle">Phone</div>
-                    <div className="footerContent">123-456-789</div>
+                    <div className="footerTitle">Telefono</div>
+                    <div className="footerContent"><a href="tel:+393664341755">+39 366 4341755</a></div>
                 </div>
                 <div className="footerElement">
                     <div className="footerTitle">Email</div>
-                    <div className="footerContent">prova@prova.com</div>
+                    <div className="footerContent"><a href="mailto:tommymolesti246@gmail.com">tommymolesti246@gmail.com</a></div>
                 </div>
                 <div className="footerElement">
                     <div className="footerTitle">Follow Me</div>
@@ -28,6 +28,10 @@ export default class Footer extends React.Component{
                     </div>
                 </div>
                 <small>&copy; {new Date().getFullYear()} by Tommaso Molesti</small>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
             </div>
         ) 
     }

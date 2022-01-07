@@ -37,36 +37,36 @@ function Contact(){
     return(
         <div className="App">
         <NavigatorBar />
-        <div className='titleContatti'>Contatti</div>
-        <div className='testoContatti'>Un modo semplice per contattarmi</div>
-        <div className="subTitleContatti">Telefono</div>
-        <div className='testoContatti'>+39 366 4341755</div>
-        <div className='subTitleContatti'>Email</div>
-        <div className='testoContatti'>tommymolesti246@gmail.com</div>
-        <div className='subTitleContatti'>Contattami via email da qui</div>
+        <div className='titlePage'>Contatti</div>
+        <div className='testoPage'>Un modo semplice per contattarmi</div>
+        <div className="subTitlePage">Telefono</div>
+        <div className='testoPage'><a href="tel:+393664341755">+39 366 4341755</a></div>
+        <div className='subTitlePage'>Email</div>
+        <div className='testoPage'><a href="mailto:tommymolesti246@gmail.com">tommymolesti246@gmail.com</a></div>
+        <div className='subTitlePage'>Contattami via email da qui</div>
         <form onSubmit={onSubmit}>
+            <div>Il tuo nome</div>
             <input
                 type='text'
                 name='from_name'
-                placeholder='Nome'
                 value={toSend.from_name}
                 onChange={handleChange}
                 className='inputForm'
                 required
             />
+            <div>La tua email</div>
             <input
                 type='text'
                 name='reply_to'
-                placeholder='La tua email'
                 value={toSend.reply_to}
                 onChange={handleChange}
                 className='inputForm'
                 required
             />
+            <div>Messaggio</div>
             <input
                 type='text'
                 name='message'
-                placeholder='Messaggio'
                 value={toSend.message}
                 onChange={handleChange}
                 className='inputFormMessage'

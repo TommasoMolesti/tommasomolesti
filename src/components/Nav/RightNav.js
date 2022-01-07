@@ -35,8 +35,11 @@ const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
       <li><Link to="/"><a>Home</a></Link></li>
-      <li><Link to="/about"><a>About</a></Link></li>
-      <li><Link to="/contact"><a>Contact</a></Link></li>
+      <li><Link to="/interessi"><a>Interessi</a></Link></li>
+      <li><Link to="/istruzione"><a>Istruzione</a></Link></li>
+      <li><Link to="/esperienze-lavorative"><a>Esperienze lavorative</a></Link></li>
+      <li><Link to="/progetti-personali"><a>Progetti personali</a></Link></li>
+      <li><Link to="/contatti"><a>Contatti</a></Link></li>
       {/*<li><img src={ukFlag} height="20px" width="40px"/></li>*/}
     </Ul>
   )

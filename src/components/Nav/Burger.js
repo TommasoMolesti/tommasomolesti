@@ -15,6 +15,7 @@ const StyledBurger = styled.div`
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
+    background-color: #f3f3f3;
   }
   div {
     width: 2rem;
