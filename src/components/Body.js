@@ -1,18 +1,31 @@
 import React from "react";
 import imageHome from '../imageHome.jpeg'
+import computerImage from '../components/computerIcon.png'
+import pencilImage from '../components/pencilIcon.png'
+import runningImage from '../components/runningIcon.png'
 export default class Body extends React.Component{
     render(){
+        function getAge(dateString) {
+            var today = new Date();
+            var birthDate = new Date(dateString);
+            var age = today.getFullYear() - birthDate.getFullYear();
+            var m = today.getMonth() - birthDate.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+            return age;
+        }
         return(
             <div>
-                <div className="helloHome">Ciao</div><br/>
-                <div>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to
-                tell a story and let your users know a little more about you.</div><br/>
-                <img style={{borderRadius:"50%",marginLeft:"5%",marginRight:"5%"}} src={imageHome} height="90%" width="90%"/>
-                <div className="container-cerchi">
-                    <div class="cerchio1">Resume</div>
-                    <div class="cerchio2">Projects</div>
-                    <div class="cerchio3">Contact</div>
+                
+                {/*<div>Mi chiamo Tommaso, ho {getAge('August 22, 2001 00:01:00')} anni</div><br/>*/}
+                <img className="imageHome" src={imageHome}/>
+                <div className="containerTextHome">
+                    <div className="textHome"><img className="iconsHome" src={computerImage}/>Full stack developer</div>
+                    <div className="textHome"><img className="iconsHome" src={pencilImage}/>Studente di Ingegneria Informatica</div>
+                    <div className="textHome"><img className="iconsHome" src={runningImage}/>Mezzomaratoneta</div>
                 </div>
+                
             </div>
         )
     }

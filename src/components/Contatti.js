@@ -38,12 +38,6 @@ function Contact(){
         <div className="App">
         <NavigatorBar />
         <div className='titlePage'>Contatti</div>
-        <div className='testoPage'>Un modo semplice per contattarmi</div>
-        <div className="subTitlePage">Telefono</div>
-        <div className='testoPage'><a href="tel:+393664341755">+39 366 4341755</a></div>
-        <div className='subTitlePage'>Email</div>
-        <div className='testoPage'><a href="mailto:tommymolesti246@gmail.com">tommymolesti246@gmail.com</a></div>
-        <div className='subTitlePage'>Contattami via email da qui</div>
         <form onSubmit={onSubmit}>
             <div>Il tuo nome</div>
             <input
