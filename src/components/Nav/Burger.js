@@ -6,7 +6,7 @@ import RightNav from './RightNav';
 const StyledBurger = styled.div`
   width: 2rem;
   height: 2rem;
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
   z-index: 20;
@@ -15,7 +15,7 @@ const StyledBurger = styled.div`
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
-    background-color: #f3f3f3;
+    background-color: #e7e7e7;
   }
   div {
     width: 2rem;

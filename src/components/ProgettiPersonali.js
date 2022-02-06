@@ -10,7 +10,6 @@ export default class ProgettiPersonali extends React.Component{
         <NavigatorBar />
         <div className='titlePage'>Progetti personali</div>
         <div className='testoPage'>Progetti personali già operativi e in fase di sviluppo</div>
-        <div className="bar"></div>
         <div className='subTitlePage'>Questo sito <a href="https://github.com/TommasoMolesti/tommasomolesti">(Github)</a></div>
         <div className='testoPage'>
           Questo &egrave; un sito pensato per raccogliere tutte le mie informazioni personali e professionali.<br />
@@ -21,7 +20,6 @@ export default class ProgettiPersonali extends React.Component{
           L'idea è nata a Marzo 2020, ma è stata applicata un pochino più tardi.<br />
           Naturalmente è costantemente in aggiornamento in base alle modifiche che mi vengono in mente col passare del tempo, ma potete i vari commit sulla repository Github.
         </div>
-        <div className="bar"></div>
         <div className='subTitlePage'>Software per gestione di cassa <a href="https://github.com/TommasoMolesti/cassafestimborgo">(Github)</a></div>
         <div className='testoPage'>
         <ul className="listeVarie">
@@ -32,7 +30,6 @@ export default class ProgettiPersonali extends React.Component{
             <li>Pensato per essere usato come software gestionale di una festa paesana</li>
           </ul>
         </div>
-        <div className="bar"></div>
         <Footer />
       </div>
     )

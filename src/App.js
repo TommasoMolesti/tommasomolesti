@@ -4,7 +4,9 @@ import Interessi  from './components/Interessi';
 import Contatti from './components/Contatti';
 import Resoconto from './components/Resoconto';
 import ProgettiPersonali from './components/ProgettiPersonali';
-
+import CookieConsent from "react-cookie-consent";
+import PrivacyCookiePolicy from './components/PrivacyCookiePolicy';
+import { Link } from 'react-router-dom';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
@@ -20,8 +22,19 @@ export default class App extends React.Component{
             <Route path="/contatti" element={<Contatti/>} />
             <Route path="/resoconto" element={<Resoconto/>} />
             <Route path="/progetti-personali" element={<ProgettiPersonali/>} />
+            <Route path="/privacy-and-cookie-policy" element={<PrivacyCookiePolicy/>} />
           </Routes>
           </div>
+        <CookieConsent
+          location="bottom"
+          buttonText="Ho capito"
+          cookieName="Cookies1"
+          style={{ background: "black", textColor: "white"}}
+          buttonStyle={{ background: "white", fontSize: "10px", width: "100px", height: "30px", position: "absolute", right: 0, textColor: "black"}}
+          expires={150}
+        >
+          Questo sito utilizza i cookies, ma solo il minimo indispensabile. <Link to="/privacy-and-cookie-policy"><a className='moreInfo'>Dimmi di pi&ugrave;</a></Link>
+        </CookieConsent>
         </BrowserRouter>
       </div>
       

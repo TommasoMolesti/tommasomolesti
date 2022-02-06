@@ -40,6 +40,7 @@
     height: 40px;
     margin: 6%;
     vertical-align: middle;
+    margin-left: 7.5%;
   }
   .titlePage{
     font-size: 30px;
@@ -109,6 +110,14 @@
   }
   .textHome{
     padding: 2%;
+  }
+  .moreInfo{
+    text-decoration: none;
+    color: white;
+  }
+  a:visited{
+    text-decoration: none;
+    color: black;
   }
 }
 @media(max-width: 1200px) {

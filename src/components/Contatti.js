@@ -20,7 +20,7 @@ function Contact(){
       const onSubmit = (e) => {
         e.preventDefault();
         send(
-          'service_84ptekq',
+          'service_3c9uamt',
           'template_on7dxbw',
           toSend,
           "user_xvca7As9yGUC6b2y4vJou"

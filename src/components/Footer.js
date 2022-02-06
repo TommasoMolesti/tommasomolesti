@@ -14,16 +14,16 @@ export default class Footer extends React.Component{
                 </div>
                 <div className="footerElement">
                     <div className="footerTitle">Email</div>
-                    <div className="footerContent"><a href="mailto:tommymolesti246@gmail.com">tommymolesti246@gmail.com</a></div>
+                    <div className="footerContent"><a href="mailto:info@tommasomolesti.com">info@tommasomolesti.com</a></div>
                 </div>
                 <div className="footerElement">
                     <div className="footerTitle">Follow Me</div>
                     <div className="footerContent">
                     <ul class="social-icons">
-                        <a href="https://www.instagram.com/tommaso_molesti/"><img className="icon" src={instagram}/></a>
-                        <a href="https://www.facebook.com/tommaso.molesti"><img className="icon" src={facebook}/></a>
-                        <a href="https://github.com/TommasoMolesti"><img className="icon" src={github}/></a>
-                        <a href="https://www.linkedin.com/in/tommaso-molesti/"><img className="icon" src={linkedin}/></a>
+                        <a target="blank" href="https://www.instagram.com/tommaso_molesti/"><img className="icon" src={instagram}/></a>
+                        <a target="blank" href="https://www.facebook.com/tommaso.molesti"><img className="icon" src={facebook}/></a>
+                        <a target="blank" href="https://github.com/TommasoMolesti"><img className="icon" src={github}/></a>
+                        <a target="blank" href="https://www.linkedin.com/in/tommaso-molesti/"><img className="icon" src={linkedin}/></a>
                     </ul>
                     </div>
                 </div>
