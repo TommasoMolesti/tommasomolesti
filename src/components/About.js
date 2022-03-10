@@ -2,11 +2,14 @@ import React from 'react';
 import NavigatorBar from './Nav/NavigatorBar';
 import Footer from './Footer'
 
-export default class Resoconto extends React.Component{
+
+export default class About extends React.Component{
   render(){
     return(
       <div className="App">
         <NavigatorBar />
+        <div className='titlePage'>About</div>
+          {/*
         <div className='titlePage'>Istruzione</div>
         <div className='testoPage'>Percorsi scolastici terminati e in corso</div>
         <div className='subTitlePage'>Universit&agrave; di Pisa -  Facolt&agrave; di Ingegneria Informatica</div>
@@ -57,7 +60,7 @@ export default class Resoconto extends React.Component{
             <li>Sviluppo script Bash e script Python per automatizzare le operazioni di manutenzione</li>
             <li>Sviluppo interfaccia web per una migliore manutenzione</li>
           </ul>
-        </div>
+        </div>*/}
         <Footer />
       </div>
     )

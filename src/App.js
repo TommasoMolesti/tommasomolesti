@@ -1,9 +1,9 @@
 import React from 'react';
 import Home from './components/Home'
 import Interessi  from './components/Interessi';
-import Contatti from './components/Contatti';
-import Resoconto from './components/Resoconto';
-import ProgettiPersonali from './components/ProgettiPersonali';
+import Contacts from './components/Contacts';
+import Portfolio from './components/Portfolio';
+import About from './components/About';
 import CookieConsent from "react-cookie-consent";
 import PrivacyCookiePolicy from './components/PrivacyCookiePolicy';
 import { Link } from 'react-router-dom';
@@ -19,9 +19,9 @@ export default class App extends React.Component{
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/interessi" element={<Interessi />} />
-            <Route path="/contatti" element={<Contatti/>} />
-            <Route path="/resoconto" element={<Resoconto/>} />
-            <Route path="/progetti-personali" element={<ProgettiPersonali/>} />
+            <Route path="/contacts" element={<Contacts/>} />
+            <Route path="/portfolio" element={<Portfolio/>} />
+            <Route path="/about" element={<About/>} />
             <Route path="/privacy-and-cookie-policy" element={<PrivacyCookiePolicy/>} />
           </Routes>
           </div>

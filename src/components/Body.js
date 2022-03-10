@@ -19,11 +19,13 @@ export default class Body extends React.Component{
             <div>
                 
                 {/*<div>Mi chiamo Tommaso, ho {getAge('August 22, 2001 00:01:00')} anni</div><br/>*/}
-                <img className="imageHome" src={imageHome}/>
+                <div className="containerImageHome">
+                    <img className="imageHome" src={imageHome}/>
+                </div>
                 <div className="containerTextHome">
-                    <div className="textHome"><img className="iconsHome" src={computerImage}/>Full stack developer</div>
-                    <div className="textHome"><img className="iconsHome" src={pencilImage}/>Studente di Ingegneria Informatica</div>
-                    <div className="textHome"><img className="iconsHome" src={runningImage}/>Mezzomaratoneta</div>
+                    <div className="textHome"><img className="iconsHome" src={computerImage}/>Web developer</div>
+                    <div className="textHome"><img className="iconsHome" src={pencilImage}/>Computer Engineering Student</div>
+                    <div className="textHome"><img className="iconsHome" src={runningImage}/>Half Marathoner</div>
                 </div>
                 
             </div>

@@ -9,13 +9,13 @@ const StyledBurger = styled.div`
   position: absolute;
   top: 20px;
   right: 20px;
-  z-index: 20;
+  z-index: 100;
   display: none;
   @media (max-width: 768px) {
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
-    background-color: #e7e7e7;
+    background-color: white;
   }
   div {
     width: 2rem;

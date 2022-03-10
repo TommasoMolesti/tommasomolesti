@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ukFlag from '../ukFlag.png'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Ul = styled.ul`
   list-style: none;
@@ -12,8 +11,9 @@ const Ul = styled.ul`
   }
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: #e7e7e7;
+    background-color: white;
     position: fixed;
+    z-index:99;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
     right: 0;
@@ -29,17 +29,30 @@ const Ul = styled.ul`
       text-decoration:none;
     }
   }
+  @media (min-width: 1000px){
+    li,a{
+      text-decoration:none;
+      font-size:20px;
+      padding:8px;
+      margin-top:2%;
+    }
+    a:hover{
+      color:#005FEB;
+    }
+    .active{
+      color:#005FEB;
+    }
+  }
 `;
 
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li><Link to="/"><a>Home</a></Link></li>
-      {/*<li><Link to="/interessi"><a>Interessi</a></Link></li>*/}
-      <li><Link to="/resoconto"><a>Resoconto</a></Link></li>
-      <li><Link to="/progetti-personali"><a>Progetti personali</a></Link></li>
-      <li><Link to="/contatti"><a>Contatti</a></Link></li>
-      {/*<li><img src={ukFlag} height="20px" width="40px"/></li>*/}
+      <li><NavLink activeClassName="active" to="/"><a>Home</a></NavLink></li>
+      {/*<li><NavLink to="/interessi"><a>Interessi</a></NavLink></li>*/}
+      <li><NavLink activeClassName="active" to="/portfolio"><a>Portfolio</a></NavLink></li>
+      <li><NavLink activeClassName="active" to="/about"><a>About me</a></NavLink></li>
+      <li><NavLink activeClassName="active" to="/contacts"><a>Contacts</a></NavLink></li>
     </Ul>
   )
 }

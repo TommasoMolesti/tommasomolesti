@@ -2,33 +2,30 @@
 
 @media (max-width: 768px) {
   body{
-    background-color: #e7e7e7;
+    background-color: white;
     font-family: 'Mukta', sans-serif;
     margin-left: 5%;
     margin-right: 5%;
-    text-align: justify;
-    text-justify: inter-word;
   }
   a:link {
     color: black;
   }
   .logo {
     color:black;
-    padding: 15px;
-    font-size: 30px;
+    font-size: 36px;
     float: right;
-    margin-right: 3%;
-  }
-  .bar{
-    width: 100% !important;
-    height: 0.5px;
-    background-color: rgba(34, 34, 34, 0.514);
+    margin-left: 5%;
+    margin-top: 2%;
   }
   .footerTitle{
     font-weight: bold;
+    font-size: 18px;
   }
   .footerElement{
     padding:10px 10px 10px 0;
+  }
+  .footerContent{
+    text-decoration: none;
   }
   .social-icons{
     list-style-type: none;
@@ -40,7 +37,7 @@
     height: 40px;
     margin: 6%;
     vertical-align: middle;
-    margin-left: 7.5%;
+    margin-left: 13%;
   }
   .titlePage{
     font-size: 30px;
@@ -61,7 +58,7 @@
     height: 40px;
     border-color: rgba(0, 0, 0, 0.541);
     border-radius: 5px;
-    background-color: #e7e7e7;
+    background-color: white;
   }
   .inputFormMessage{
     width: 100%;
@@ -69,13 +66,13 @@
     height: 70px;
     border-color: rgba(0, 0, 0, 0.541);
     border-radius: 5px;
-    background-color: #e7e7e7;
+    background-color: white;
   }
   .buttonForm{
     width: 100%;
     height: 35px;
     margin-bottom: 60%;
-    background-color: rgb(0, 0, 70);
+    background-color: #005FEB;
     border-radius: 5px;
     color: #e7e7e7;
   }
@@ -86,7 +83,7 @@
     height: 40px;
     width: 40px;
     margin-top: 5%;
-    margin-left: -5%;
+    margin-left: -6%;
   }
   .imageHome{
     border-radius:50%;
@@ -99,9 +96,8 @@
   }
   .containerTextHome{
     justify-content: center;
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 55%;
-    margin-left: 5%;
   }
   .iconsHome{
     width: 25px;
@@ -119,9 +115,33 @@
     text-decoration: none;
     color: black;
   }
+  .copy{
+    margin-bottom: 15%;
+  }
+  .project{
+    text-decoration: none;
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+  .containerImages .project img{
+    max-width: 100%;
+    margin-top: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .textPortfolioImages{
+    padding: 2px 0 2px 5px;
+    line-height: 25px;
+    color: white;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    bottom: 7px;
+  }
+  .textPortfolioImages h3{
+    font-size: 15px;
+  }
+  .textPortfolioImages p{
+    font-size: 15px;
+  }
 }
-@media(max-width: 1200px) {
-  
-}
-
-
