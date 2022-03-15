@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from 'react-router-dom';
 import imageHome from '../imageHome.jpeg'
 import computerImage from '../components/computerIcon.png'
 import pencilImage from '../components/pencilIcon.png'
@@ -23,7 +24,7 @@ export default class Body extends React.Component{
                     <img className="imageHome" src={imageHome}/>
                 </div>
                 <div className="containerTextHome">
-                    <div className="textHome"><img className="iconsHome" src={computerImage}/>Web developer</div>
+                    <div className="textHome"><NavLink to="/portfolio" style={{textDecoration:"none"}}><img className="iconsHome" src={computerImage}/>Web developer</NavLink></div>
                     <div className="textHome"><img className="iconsHome" src={pencilImage}/>Computer Engineering Student</div>
                     <div className="textHome"><img className="iconsHome" src={runningImage}/>Half Marathoner</div>
                 </div>

@@ -32,9 +32,9 @@ const Ul = styled.ul`
   @media (min-width: 1000px){
     li,a{
       text-decoration:none;
-      font-size:20px;
+      font-size:18px;
       padding:8px;
-      margin-top:2%;
+      margin-top:4%;
     }
     a:hover{
       color:#005FEB;

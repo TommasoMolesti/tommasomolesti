@@ -37,10 +37,10 @@ function Contacts(){
     return(
         <div>
           <NavigatorBar />
-          <div className='titlePage'>Contatti</div>
+          <div className='titlePage'>Contacts</div>
           <div className='contactsContainer'>
             <form onSubmit={onSubmit}>
-                <div>Il tuo nome</div>
+                <div className='textForm'>Your name</div>
                 <input
                     type='text'
                     name='from_name'
@@ -49,7 +49,7 @@ function Contacts(){
                     className='inputForm'
                     required
                 />
-                <div>La tua email</div>
+                <div>Your email</div>
                 <input
                     type='text'
                     name='reply_to'
@@ -58,7 +58,7 @@ function Contacts(){
                     className='inputForm'
                     required
                 />
-                <div>Messaggio</div>
+                <div>Message</div>
                 <input
                     type='text'
                     name='message'
@@ -67,7 +67,7 @@ function Contacts(){
                     className='inputFormMessage'
                     required
                 />
-                <button className="buttonForm" type='submit'>Invia</button>
+                <button className="buttonForm" type='submit'>Send</button>
               </form>
             </div>
           <Footer />

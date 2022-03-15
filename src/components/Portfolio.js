@@ -7,8 +7,17 @@ import TalianiFerroBattuto from './PortfolioImages/TalianiFerroBattuto.png'
 import WingTsunShop from './PortfolioImages/WingTsunShop.png'
 import WingTsunPisa from './PortfolioImages/WingTsunPisa.png'
 import DojoBrand from './PortfolioImages/DojoBrand.png'
+import TommasoMolesti from './PortfolioImages/TommasoMolesti.png'
 
 export default class Portfolio extends React.Component{
+  constructor(props) {
+    super(props);
+    this.state = { isLoading: true }
+  }
+
+  componentDidMount() {
+      this.setState({isLoading: false})
+  }
   render(){
     return(
       <div className="App">
@@ -33,12 +42,12 @@ export default class Portfolio extends React.Component{
               <p>Designed and developed with Wix</p>
             </div>
           </a>
-          <a href="https://www.talianiferroshop.com"
+          <a href="https://github.com/TommasoMolesti/tommasomolesti"
             target="_blank"
             className='project'>
-            <img src={TalianiFerroShop}/>
+            <img src={TommasoMolesti}/>
             <div className='textPortfolioImages'>
-              <h3>Tommaso Molesti (questo sito)</h3>
+              <h3>Tommaso Molesti (this site)</h3>
               <p>Designed and developed using ReactJs and CSS</p>
             </div>
           </a>

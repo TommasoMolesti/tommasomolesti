@@ -8,59 +8,18 @@ export default class About extends React.Component{
     return(
       <div className="App">
         <NavigatorBar />
-        <div className='titlePage'>About</div>
-          {/*
-        <div className='titlePage'>Istruzione</div>
-        <div className='testoPage'>Percorsi scolastici terminati e in corso</div>
-        <div className='subTitlePage'>Universit&agrave; di Pisa -  Facolt&agrave; di Ingegneria Informatica</div>
-        <div className='testoPage'><i>Set 2020 (ancora in corso)</i></div>
-        <ul className='listeVarie'>
-          <li>Attualmente al 2° anno</li>
-        </ul>
-        <br />
-        <div className='subTitlePage'>I.T.I.S. G. Marconi - Pontedera</div>
-        <div className='testoPage'><i>Set 2015 - Giu 2020</i></div>
-        <ul className='listeVarie'>
-          <li>Diplomato con 98/100 in Informatica</li>
-        </ul>
-        <br />
-        <div className='titlePage'>Esperienze lavorative</div>
-        <div className='testoPage'>Esperienze lavorative e di alternanza scuola lavoro svolte</div>
-        <div className='subTitlePage'>Taliani Ferro</div>
-        <div className='testoPage'><i>Nov 2020 (ancora in corso)</i></div>
-        <div className='testoPage'>
-          <ul className="listeVarie">
-            <li>Sviluppo <a target="blank" href="https://www.talianiferroshop.com">talianiferroshop.com</a> (realizzato con Shopify)</li>
-            <li>Ecommerce con più di 10.000 articoli in inventario</li>
-            <li>Aggiornamento dei prezzi semi-automatico in base al prezzo del ferro</li>
-          </ul>
+        <div className='titlePage'>About me</div>
+        <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales velit ut tincidunt gravida. Morbi imperdiet eleifend nunc ut euismod. Morbi tempor tellus purus. Ut sit amet ipsum lobortis, cursus lorem sed, ullamcorper ligula. Proin tellus nisi, congue sed elit scelerisque, ornare sagittis magna. Etiam auctor, sapien sit amet facilisis malesuada, felis est pulvinar massa, vel volutpat ante sem in sem. Fusce non vehicula erat.
+
+Donec dignissim nisi convallis massa scelerisque ultrices. Nulla mattis erat quis condimentum dapibus. Vestibulum eu ligula eu nibh vestibulum tincidunt. Sed non sem augue. Nullam faucibus venenatis sollicitudin. Duis feugiat pulvinar urna, ut luctus arcu pulvinar vel. Maecenas sodales feugiat dolor, a vehicula nulla finibus non. Nulla pharetra fermentum scelerisque. Praesent viverra risus vitae velit dignissim volutpat. Vivamus non nisi ac leo feugiat congue a aliquet nunc. Donec quis varius sapien, non mollis dui. Duis bibendum enim at mauris pellentesque dictum. Sed nibh lectus, lacinia non malesuada vitae, fringilla ut massa. Suspendisse tincidunt dictum dolor in ultricies. Cras ullamcorper venenatis massa, sit amet pretium massa posuere in. Praesent non fringilla velit, quis sagittis sem.
+
+In pharetra ac ante ut venenatis. Integer leo velit, dapibus faucibus tincidunt vel, pharetra nec metus. Vestibulum at congue tortor, sed sagittis eros. Suspendisse nec nibh eu leo vehicula tristique eget eget ipsum. Proin a enim eros. Vestibulum facilisis elit et dui imperdiet convallis. Maecenas non orci scelerisque, ultrices quam id, aliquam massa. Nulla iaculis vitae ipsum ut molestie. In elementum vel turpis non lacinia. Nunc in scelerisque dui. Proin egestas felis nisl, quis euismod nulla molestie ut. Praesent nec sapien gravida, ullamcorper turpis id, fermentum metus. Aenean velit velit, interdum id dui nec, commodo ornare leo. Quisque congue nibh purus, sit amet scelerisque ante tincidunt eget.
+
+Nullam et varius ipsum, at mattis mi. Praesent quis nisl arcu. Duis et lectus velit. Sed aliquet felis ultricies fermentum viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec efficitur, nisi ut tincidunt pellentesque, magna mauris hendrerit orci, eu bibendum lacus elit quis elit. Curabitur volutpat, nibh et ullamcorper ultrices, velit dolor sagittis risus, ac imperdiet metus augue eu odio. Cras feugiat mi maximus felis consequat congue. Nunc sed ipsum a dui vestibulum rutrum vitae ut libero. Nullam sed leo sollicitudin, bibendum augue eu, posuere ligula. Aliquam vestibulum lectus cursus elementum tempus.
+
+Phasellus dictum nibh odio, sed rutrum arcu vestibulum eget. Proin rutrum posuere pharetra. Sed placerat nunc sed nulla consectetur ornare. Vivamus at mattis nisi, ut mattis urna. Sed et tristique ante, vitae fermentum nulla. Vestibulum id dui vel massa feugiat venenatis sit amet eu sem. Suspendisse vitae arcu at purus interdum sodales ac at diam. Nunc efficitur enim at aliquet maximus. Pellentesque blandit, erat vitae tempor commodo, massa ligula aliquet est, vel tristique arcu urna et felis. Praesent vel vestibulum libero, et maximus nunc. Ut porta magna ut posuere cursus.
         </div>
-        <div className='subTitlePage'>Digitech (Alternanza scuola lavoro)</div>
-        <div className='testoPage'><i>Set 2019 - Dic 2019</i></div>
-        <div className='testoPage'>
-          <ul className="listeVarie">
-            <li>Sviluppo siti web responsive con HTML, CSS e Javascript</li>
-          </ul>
-        </div>
-        <div className='subTitlePage'>Dipartimento di Informatica CNR - Pisa (Alternanza scuola lavoro)</div>
-        <div className='testoPage'><i>Feb 2018 - Apr 2019</i></div>
-        <div className='testoPage'>
-          <ul className="listeVarie">
-            <li>Progetto <a target="blank" href="https://www.cnr.it/sites/default/files/public/media/rassegna_stampa/Rep_Scienze_Il_sensore_che_protegge_chi_vive_in_zone_isolate_12-12-2019.pdf">"Social Tech Care"</a></li>
-            <li>Configurazione ed installazione di domotica domestica per facilitare la vita quotidiana di persone non autosufficienti</li>
-            <li>Esposizione del progetto alla <a target="blank" href="https://www.bright-night.it/">"Notte dei Ricercatori"</a> al CNR di Pisa il 28 settembre 2018</li>
-            <li>Vincitore premio "Storie di alternanza" - Camera di Commercio Pisa - 28 novembre 2018</li>
-          </ul>
-        </div>
-        <div className='subTitlePage'>Progetto NAS (Alternanza scuola lavoro)</div>
-        <div className='testoPage'><i>Giu 2018 - Giu 2020</i></div>
-        <div className='testoPage'>
-          <ul className="listeVarie">
-            <li>Configurazione di un server Linux NAS che consente agli utenti della scuola di fare il login sui PC dell'edificio per raggiungerei propri dati ovunque all'interno della scuola</li>
-            <li>Sviluppo script Bash e script Python per automatizzare le operazioni di manutenzione</li>
-            <li>Sviluppo interfaccia web per una migliore manutenzione</li>
-          </ul>
-        </div>*/}
         <Footer />
       </div>
     )
