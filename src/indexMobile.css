@@ -12,14 +12,15 @@
   }
   .logo {
     color:black;
-    font-size: 36px;
+    font-size: 28px;
     float: right;
     margin-left: 5%;
-    margin-top: 2%;
+    margin-top: 6%;
   }
   .footerTitle{
     font-weight: bold;
     font-size: 18px;
+    margin-bottom: 5px;
   }
   .footerElement{
     padding:10px 10px 10px 0;
@@ -56,25 +57,50 @@
     width: 100%;
     margin-bottom: 5%;
     height: 40px;
-    border-color: rgba(0, 0, 0, 0.541);
-    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.2);
     background-color: white;
   }
   .inputFormMessage{
     width: 100%;
     margin-bottom: 5%;
-    height: 70px;
-    border-color: rgba(0, 0, 0, 0.541);
-    border-radius: 5px;
+    height: 150px;
+    border-color: rgba(0, 0, 0, 0.2);
     background-color: white;
   }
-  .buttonForm{
+  .buttonForm {
+    background-color: #0a6bff;
     width: 100%;
-    height: 35px;
-    margin-bottom: 60%;
-    background-color: #005FEB;
-    border-radius: 5px;
-    color: #e7e7e7;
+    border-radius: 4px;
+    margin-bottom: 50%;
+    border: 0;
+    box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    min-height: 35px;
+    min-width: 60px;
+    padding: 16px 20px;
+    position: relative;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    transition: all .2s cubic-bezier(.22, .61, .36, 1);
+  }
+  .contactsContainer{
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+     -ms-animation: fadein 2s; /* Internet Explorer */
+      -o-animation: fadein 2s; /* Opera < 12.1 */
+         animation: fadein 2s;
+  }
+  .textForm{
+    padding:5px;
   }
   .listeVarie{
     margin-left: 6%;
@@ -93,10 +119,16 @@
     margin-bottom:15%;
     height: 80%;
     width: 80%;
+    box-shadow: rgba(100, 100, 111, 0.9) 0px 7px 29px 0px;
+      -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 2s; /* Firefox < 16 */
+       -ms-animation: fadein 2s; /* Internet Explorer */
+        -o-animation: fadein 2s; /* Opera < 12.1 */
+           animation: fadein 2s;
   }
   .containerTextHome{
     justify-content: center;
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 55%;
   }
   .iconsHome{
@@ -106,6 +138,11 @@
   }
   .textHome{
     padding: 2%;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 2s; /* Firefox < 16 */
+       -ms-animation: fadein 2s; /* Internet Explorer */
+        -o-animation: fadein 2s; /* Opera < 12.1 */
+           animation: fadein 2s;
   }
   .moreInfo{
     text-decoration: none;
@@ -116,6 +153,7 @@
     color: black;
   }
   .copy{
+    margin-top: 10%;
     margin-bottom: 15%;
   }
   .project{
@@ -124,10 +162,18 @@
     float: left;
     position: relative;
   }
+  .containerImages{
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+     -ms-animation: fadein 2s; /* Internet Explorer */
+      -o-animation: fadein 2s; /* Opera < 12.1 */
+         animation: fadein 2s;
+  }
   .containerImages .project img{
     max-width: 100%;
     margin-top: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+    border-radius: 7px;
   }
   .textPortfolioImages{
     padding: 2px 0 2px 5px;
@@ -136,12 +182,42 @@
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
-    bottom: 7px;
+    bottom: 4px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
   }
   .textPortfolioImages h3{
     font-size: 15px;
   }
   .textPortfolioImages p{
     font-size: 15px;
+  }
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  
+  /* Firefox < 16 */
+  @-moz-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+  
+  /* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+  
+  /* Internet Explorer */
+  @-ms-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+  
+  /* Opera < 12.1 */
+  @-o-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
   }
 }

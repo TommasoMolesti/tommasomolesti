@@ -49,7 +49,7 @@ function Contacts(){
                     className='inputForm'
                     required
                 />
-                <div>Your email</div>
+                <div className='textForm'>Your email</div>
                 <input
                     type='text'
                     name='reply_to'
@@ -58,7 +58,7 @@ function Contacts(){
                     className='inputForm'
                     required
                 />
-                <div>Message</div>
+                <div className='textForm'>Message</div>
                 <input
                     type='text'
                     name='message'

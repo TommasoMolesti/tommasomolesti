@@ -1,11 +1,8 @@
 -google analitycs
--fai grafica per pc e tablet
 -cookie policy e privacy policy iubenda
--rifai form con netlify
 -rifai foto homepage
 -trova qualcosa da scrivere in about
--cambia icone social
 -portfolio fai icona di caricamento
--incrementa ombra portfolio
+-form contatti su telefono zoomma in avanti quando entro
 
 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

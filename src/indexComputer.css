@@ -68,29 +68,60 @@
       padding:5px 5px 5px 0;
     }
     .inputForm{
-      width: 51%;
+      width: 100%;
       margin-bottom: 2%;
       height: 40px;
       border-color: rgba(0, 0, 0, 0.2);
       background-color: white;
     }
     .inputFormMessage{
-      width: 51%;
+      width: 100%;
       margin-bottom: 5%;
       height: 150px;
       border-color: rgba(0, 0, 0, 0.2);
       background-color: white;
     }
-    .buttonForm{
-      width: 51%;
-      height: 35px;
-      margin-bottom: 60%;
-      background-color: #005FEB;
-      color: #e7e7e7;
+    .buttonForm {
+      background-color: #0a6bff;
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 50%;
+      border: 0;
+      box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      display: inherit;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+      min-height: 35px;
+      min-width: 60px;
+      padding: 16px 20px;
+      position: relative;
+      text-align: center;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      vertical-align: baseline;
+      transition: all .2s cubic-bezier(.22, .61, .36, 1);
+    }
+
+    .buttonForm:hover {
+      background-color: #065dd8;
+      transform: translateY(-2px);
     }
     .contactsContainer{
-      width: 100%;
-      text-align: center;
+      width: 50%;
+      margin:auto;
+      -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 2s; /* Firefox < 16 */
+       -ms-animation: fadein 2s; /* Internet Explorer */
+        -o-animation: fadein 2s; /* Opera < 12.1 */
+           animation: fadein 2s;
+    }
+    .textForm{
+      padding:5px;
     }
     .listeVarie{
       margin-left: 6%;
