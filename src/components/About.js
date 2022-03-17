@@ -9,16 +9,62 @@ export default class About extends React.Component{
       <div className="App">
         <NavigatorBar />
         <div className='titlePage'>About me</div>
-        <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales velit ut tincidunt gravida. Morbi imperdiet eleifend nunc ut euismod. Morbi tempor tellus purus. Ut sit amet ipsum lobortis, cursus lorem sed, ullamcorper ligula. Proin tellus nisi, congue sed elit scelerisque, ornare sagittis magna. Etiam auctor, sapien sit amet facilisis malesuada, felis est pulvinar massa, vel volutpat ante sem in sem. Fusce non vehicula erat.
+        <div class="wrap-collabsible">
+          <input id="collapsible1" class="toggle" type="checkbox" checked/>
+          <label for="collapsible1" class="lbl-toggle">School</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p>
+                I graduate in high school in Computer Science.<br/>
+                Currently studying Computer Engineering at Università di Pisa
+              </p>
+            </div>
+          </div>
 
-Donec dignissim nisi convallis massa scelerisque ultrices. Nulla mattis erat quis condimentum dapibus. Vestibulum eu ligula eu nibh vestibulum tincidunt. Sed non sem augue. Nullam faucibus venenatis sollicitudin. Duis feugiat pulvinar urna, ut luctus arcu pulvinar vel. Maecenas sodales feugiat dolor, a vehicula nulla finibus non. Nulla pharetra fermentum scelerisque. Praesent viverra risus vitae velit dignissim volutpat. Vivamus non nisi ac leo feugiat congue a aliquet nunc. Donec quis varius sapien, non mollis dui. Duis bibendum enim at mauris pellentesque dictum. Sed nibh lectus, lacinia non malesuada vitae, fringilla ut massa. Suspendisse tincidunt dictum dolor in ultricies. Cras ullamcorper venenatis massa, sit amet pretium massa posuere in. Praesent non fringilla velit, quis sagittis sem.
+          <input id="collapsible2" class="toggle" type="checkbox" checked/>
+          <label for="collapsible2" class="lbl-toggle">Running</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p>
+                I run constantly from 2 years. <a target="_blank" href="https://www.strava.com/athletes/39964653">Here</a> is my Strava profile.<br />
+                My personal best on half marathon is 1h 57m 37s. Actually I'm training for Firenze's
+                marathon the next 27th November 2022 (that will be my first marathon ever!).
+              </p>
+            </div>
+          </div>
 
-In pharetra ac ante ut venenatis. Integer leo velit, dapibus faucibus tincidunt vel, pharetra nec metus. Vestibulum at congue tortor, sed sagittis eros. Suspendisse nec nibh eu leo vehicula tristique eget eget ipsum. Proin a enim eros. Vestibulum facilisis elit et dui imperdiet convallis. Maecenas non orci scelerisque, ultrices quam id, aliquam massa. Nulla iaculis vitae ipsum ut molestie. In elementum vel turpis non lacinia. Nunc in scelerisque dui. Proin egestas felis nisl, quis euismod nulla molestie ut. Praesent nec sapien gravida, ullamcorper turpis id, fermentum metus. Aenean velit velit, interdum id dui nec, commodo ornare leo. Quisque congue nibh purus, sit amet scelerisque ante tincidunt eget.
+          <input id="collapsible3" class="toggle" type="checkbox" checked/>
+          <label for="collapsible3" class="lbl-toggle">Work</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p>
+                <a>Here</a> is my complete CV. But you can check my work in Portfolio page.
+              </p>
+            </div>
+          </div>
 
-Nullam et varius ipsum, at mattis mi. Praesent quis nisl arcu. Duis et lectus velit. Sed aliquet felis ultricies fermentum viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec efficitur, nisi ut tincidunt pellentesque, magna mauris hendrerit orci, eu bibendum lacus elit quis elit. Curabitur volutpat, nibh et ullamcorper ultrices, velit dolor sagittis risus, ac imperdiet metus augue eu odio. Cras feugiat mi maximus felis consequat congue. Nunc sed ipsum a dui vestibulum rutrum vitae ut libero. Nullam sed leo sollicitudin, bibendum augue eu, posuere ligula. Aliquam vestibulum lectus cursus elementum tempus.
+          <input id="collapsible4" class="toggle" type="checkbox" checked/>
+          <label for="collapsible4" class="lbl-toggle">Skills</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p>
+              shopify, google ad, html, css, latex, python scripting, firebase, react js,
+              react native, wix, rasperry pi, bash scripting, adobe photoshop, adobe premiere,
+              samba
+              </p>
+            </div>
+          </div>
 
-Phasellus dictum nibh odio, sed rutrum arcu vestibulum eget. Proin rutrum posuere pharetra. Sed placerat nunc sed nulla consectetur ornare. Vivamus at mattis nisi, ut mattis urna. Sed et tristique ante, vitae fermentum nulla. Vestibulum id dui vel massa feugiat venenatis sit amet eu sem. Suspendisse vitae arcu at purus interdum sodales ac at diam. Nunc efficitur enim at aliquet maximus. Pellentesque blandit, erat vitae tempor commodo, massa ligula aliquet est, vel tristique arcu urna et felis. Praesent vel vestibulum libero, et maximus nunc. Ut porta magna ut posuere cursus.
+          <input id="collapsible5" class="toggle" type="checkbox"/>
+          <label for="collapsible5" class="lbl-toggle">Personal information</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p>
+                Born in Pontedera, 22.08.2001<br/>
+                From Peccioli 56037, Italy.
+              </p>
+            </div>
+          </div>
         </div>
         <Footer />
       </div>
