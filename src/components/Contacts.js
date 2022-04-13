@@ -59,7 +59,7 @@ function Contacts(){
                     required
                 />
                 <div className='textForm'>Message</div>
-                <input
+                <textarea
                     type='text'
                     name='message'
                     value={toSend.message}

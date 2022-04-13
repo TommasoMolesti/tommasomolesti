@@ -1,32 +1,13 @@
--google analitycs
--cookie policy e privacy policy iubenda
--rifai foto homepage
--trova qualcosa da scrivere in about
+-skills su pc
 -portfolio fai icona di caricamento
--form contatti su telefono zoomma in avanti quando entro
+-cookie policy e privacy policy iubenda
+-aggiungi link del CV
+-rifai foto homepage
+-google analitycs
+-aggiungi link a pagina wikipedia skills
+
+SI PUO' METTERE ONLINE !
+
+
 
 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
-
-scuola
-diplomato con 98/100 in informatica
-sono al Secondo anno di ingegneria informatica all'università di pisa.
-
-corsa
-Corro costantemente da circa 2 anni. Qui c'è il mio profilo di strava.
-Ho un personale sulla mezza maratona di 1h 57m 37s. 
-Attualmente mi sto preparando per la maratona di Firenze il 27 novembre 
-2022 (che sarà anche la mia prima maratona)
-
-lavoro
-cliccando qui potete scaricare il mio CV, completo di ogni mia esperienza 
-lavorativa o di alternanza scuola lavoro.
-
-competenze sviluppate
-shopify, google ad, html, css, latex, python scripting, firebase, react js,
-react native, wix, rasperry pi, bash scripting, adobe photoshop, adobe premiere,
-samba
-
-
-informazioni personali
-nato a pontedera il 22.08.2001
-peccioli 56037, Pisa, Italia
