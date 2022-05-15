@@ -73,52 +73,52 @@ export default class About extends React.Component{
             <div class="collapsible-content">
               <div class="content-inner skills">
                 <div className='skills-container'>
-                  <img src={Shopify} />
+                  <a href="https://en.wikipedia.org/wiki/Shopify" target="_blank"><img src={Shopify} /></a>
                 </div>
                 <div className='skills-container'>
-                  <img src={GoogleAds} />
+                  <a href="https://en.wikipedia.org/wiki/Google_Ads" target="_blank"><img src={GoogleAds} /></a>
                 </div>
                 <div className='skills-container'>
-                  <img src={Html} />
+                  <a href="https://en.wikipedia.org/wiki/HTML" target="_blank"><img src={Html} /></a>
                 </div>
                 <div className='skills-container'>
-                  <img src={Css} />
+                  <a href="https://en.wikipedia.org/wiki/CSS" target="_blank"><img src={Css} /></a>
                 </div>
                 <div className='skills-container'>
-                  <img src={Latex} />
+                  <a href="https://en.wikipedia.org/wiki/LaTeX" target="_blank"><img src={Latex} /></a>
                 </div>
                 <div className='skills-container'>
-                  <img src={Python} />
+                  <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank"><img src={Python} /></a>
                 </div>
                 <div className='skills-container'>
-                  <img src={Firebase} />
+                  <a href="https://en.wikipedia.org/wiki/Firebase" target="_blank"><img src={Firebase} /></a>
                 </div>
                 <div className='skills-container'>
-                  <img src={ReactImage} />
+                  <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)" target="_blank"><img src={ReactImage} /></a>
                 </div>
                 <div className='skills-container'>
-                  <img src={Wix} />
+                  <a href="https://en.wikipedia.org/wiki/Wix.com" target="_blank"><img src={Wix} /></a>
                 </div>
                 <div className='skills-container'>
-                  <img src={Raspberry} />
+                  <a href="https://en.wikipedia.org/wiki/Raspberry_Pi" target="_blank"><img src={Raspberry} /></a>
                 </div>
                 <div className='skills-container'>
-                  <img src={Bash} />
+                  <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)" target="_blank"><img src={Bash} /></a>
                 </div>
                 <div className='skills-container'>
-                  <img src={Photoshop} />
+                  <a href="https://en.wikipedia.org/wiki/Adobe_Photoshop" target="_blank"><img src={Photoshop} /></a>
                 </div>
                 <div className='skills-container'>
-                  <img src={Premiere} />
+                  <a href="https://en.wikipedia.org/wiki/Adobe_Premiere" target="_blank"><img src={Premiere} /></a>
                 </div>
                 <div className='skills-container'>
-                  <img src={Samba} />
+                  <a href="https://en.wikipedia.org/wiki/Samba_(software)" target="_blank"><img src={Samba} /></a>
                 </div>
                 <div className='skills-container'>
-                  <img src={Gimp} />
+                  <a href="https://en.wikipedia.org/wiki/GIMP" target="_blank"><img src={Gimp} /></a>
                 </div>
                 <div className='skills-container'>
-                  <img src={DaVinci} />
+                  <a href="https://en.wikipedia.org/wiki/DaVinci_Resolve" target="_blank"><img src={DaVinci} /></a>
                 </div>
               </div>
             </div>

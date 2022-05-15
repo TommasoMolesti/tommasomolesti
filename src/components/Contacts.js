@@ -4,10 +4,12 @@ import Body from './Body'
 import Footer from './Footer'
 import { send } from 'emailjs-com';
 import { useState } from 'react';
+import useAnalyticsEventTracker from '../useAnalyticsEventTracker';
 
 
 
 function Contacts(){
+  const gaEventTracker = useAnalyticsEventTracker('Contact us');
     const [toSend, setToSend] = useState({
         from_name: '',
         message: '',
@@ -67,7 +69,7 @@ function Contacts(){
                     className='inputFormMessage'
                     required
                 />
-                <button className="buttonForm" type='submit'>Send</button>
+                <button onClick={()=>gaEventTracker('email')} className="buttonForm" type='submit'>Send</button>
               </form>
             </div>
           <Footer />
